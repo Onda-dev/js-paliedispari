@@ -1,7 +1,7 @@
 // Chiedere all’utente di inserire una parola
 const parola = prompt("Inserisci una parola")
 // Creare una funzione per capire se la parola inserita è palindroma
-// function isItPal (parola) {
+function isItPal (parola) {
     // Trovare la lunghezza della parola nel prompt
     const wordLength = parola.length
     // Estraggo la prima metà della parola
@@ -18,10 +18,15 @@ const parola = prompt("Inserisci una parola")
     }
     // Controllo se la prima e la seconda metà al contrario sono uguali
     if ( firstHalf === secondHalf ) {
-        alert("Palindromo!")
+        return true
     } else {
-        alert("Non è un palindromo")
+        return false
     }
-    // }
+}
 
-// }
+if ( isItPal(parola) ) {
+    alert("Palindromo!!")
+}
+else {
+    alert("Non è un palindromo...")
+}
