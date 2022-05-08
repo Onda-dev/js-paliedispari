@@ -4,11 +4,11 @@ const word = prompt("Inserisci una parola")
 function isItPal(word) {
 
     let reverseWord = ""
-    for ( let i = word.length; i > word.length - 1; i-- ) {
+    for ( let i = word.length - 1; i >= 0; i-- ) {
         reverseWord += word[i]
-        console.log(reverseWord)
-        console.log(word.length)
     }
+    console.log(reverseWord)
+    
     if ( word === reverseWord ) {
         return true
     }
