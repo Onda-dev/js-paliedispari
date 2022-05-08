@@ -4,7 +4,10 @@ const userChoice = prompt("Scegli pari o dispari")
 const userNumber = Number(prompt("Scegli un numero da 1 a 5"))
 console.log(userNumber)
 // Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
-const cpuNumber = Math.floor(Math.random() * 5) + 1;
+function randomNumber(fromNumber, toNumber) {
+    return Math.floor(Math.random() * toNumber) + fromNumber
+}
+cpuNumber = randomNumber(1,5)
 console.log(cpuNumber)
 // Sommiamo i due numeri
 const total = userNumber + cpuNumber
