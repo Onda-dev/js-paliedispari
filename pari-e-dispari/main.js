@@ -13,4 +13,12 @@ console.log(cpuNumber)
 const total = userNumber + cpuNumber
 console.log(total)
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
+function evenNumber(number) {
+    if (number % 2 === 0) {
+        return "pari"
+    } else {
+        return "dispari"
+    }
+}
+console.log(evenNumber(total))
 // Dichiariamo chi ha vinto.
