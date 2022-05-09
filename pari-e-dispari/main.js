@@ -7,10 +7,10 @@ while ( isNaN(userNumber)) {
 }
 console.log(userNumber)
 // Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
-function randomNumber(fromNumber, toNumber) {
-    return Math.floor(Math.random() * (toNumber - fromNumber + 1) ) + toNumber;
-}
-cpuNumber = randomNumber(1,5)
+function randomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+  }
+cpuNumber = randomNumber(1, 5)
 console.log(cpuNumber)
 // Sommiamo i due numeri
 const total = userNumber + cpuNumber
